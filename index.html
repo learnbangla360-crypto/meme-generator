@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Free Online Meme Generator – Make Memes in Seconds</title>
+<meta name="description" content="Free online meme generator. Upload a photo, add top and bottom text, and download a PNG or JPG meme. No signup, no watermark, runs in your browser.">
+<link rel="canonical" href="https://memegenerator.globrik.com/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f172a">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Online Meme Generator – Make Memes in Seconds">
+<meta property="og:description" content="Upload a photo, add top and bottom text, and download your meme. Free, online, no signup, no watermark.">
+<meta property="og:url" content="https://memegenerator.globrik.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Online Meme Generator – Make Memes in Seconds">
+<meta name="twitter:description" content="Free online meme maker. Add text to any image and download it. No signup, no watermark.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='32' y='44' font-size='34' font-weight='900' text-anchor='middle' fill='%23fff' font-family='Impact,Arial'%3EM%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Meme Generator","url":"https://memegenerator.globrik.com/","description":"Free online meme generator that adds top and bottom text to your own images and exports PNG or JPG files in your browser.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://globrik.com/"},{"@type":"ListItem","position":2,"name":"Meme Generator","item":"https://memegenerator.globrik.com/"}]}</script>
+<script type="application/ld+json" id="faqld"></script>
+<style>
+:root{--bg:#fff;--tx:#0f172a;--mu:#475569;--pn:#f1f5f9;--bd:#cbd5e1;--ac:#1d4ed8;--acx:#fff;--dz:#d5dbe7}
+@media(prefers-color-scheme:dark){:root{--bg:#0b1120;--tx:#e8edf6;--mu:#a3b0c6;--pn:#141c30;--bd:#33405c;--ac:#6ea0ff;--acx:#0b1120;--dz:#1b2540}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--ac)}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.w{max-width:1080px;margin:0 auto;padding:0 18px}
+header{border-bottom:1px solid var(--bd)}
+header .w{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;padding-top:10px;padding-bottom:10px}
+.logo{font-weight:800;font-size:1.25rem;color:var(--tx);text-decoration:none}
+nav a{display:inline-block;padding:10px 2px;font-size:.95rem;font-weight:600;color:var(--tx);text-decoration:none;margin-right:12px}
+nav a:hover{text-decoration:underline}
+h1{font-size:clamp(1.7rem,4.5vw,2.4rem);line-height:1.2;margin:26px 0 6px}
+h2{font-size:1.5rem;line-height:1.3;margin:40px 0 10px}
+h3{font-size:1.15rem;margin:22px 0 6px}
+p{margin:0 0 12px}
+.sub{color:var(--mu);margin-bottom:18px}
+.tool{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);border:1px solid var(--bd);border-radius:12px;background:var(--pn);overflow:hidden}
+.ctl{padding:16px;display:flex;flex-direction:column;gap:10px}
+.ctl h2{margin:0;font-size:1.1rem}
+label{font-size:.88rem;color:var(--mu);display:block}
+input[type=text],textarea,select{width:100%;min-height:44px;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit;font-size:.95rem}
+textarea{resize:vertical;min-height:60px}
+input[type=range]{width:100%;min-height:32px}
+input[type=color]{width:100%;height:44px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);padding:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chk{display:flex;align-items:center;gap:8px;min-height:44px;font-size:.95rem;color:var(--tx)}
+.chk input{width:20px;height:20px}
+button{min-height:44px;padding:8px 14px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit;font-weight:600;cursor:pointer}
+button.p{background:var(--ac);color:var(--acx);border-color:var(--ac)}
+button:disabled{opacity:.5;cursor:not-allowed}
+.stage{padding:16px;display:flex;flex-direction:column;gap:12px;min-height:420px}
+#dz{flex:1;min-height:300px;border:2px dashed #64748b;border-radius:10px;background:var(--dz);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;cursor:pointer}
+#dz.on{border-color:var(--ac)}
+#dz b{font-size:1.1rem}
+#dz span{color:var(--mu);font-size:.9rem}
+#cvw{display:none;text-align:center}
+#cv{max-width:100%;height:auto;max-height:70vh;border-radius:6px;background:#fff}
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+#st{min-height:26px;font-size:.95rem;color:var(--mu)}
+#st.err{color:#b91c1c;font-weight:600}
+@media(prefers-color-scheme:dark){#st.err{color:#fca5a5}}
+@media(max-width:760px){.tool{grid-template-columns:1fr}.stage{order:-1}}
+.box,.toc{border:1px solid var(--bd);border-radius:10px;background:var(--pn);padding:14px 18px;margin:22px 0}
+.box h2{margin-top:0;font-size:1.2rem}
+.toc ul{columns:2;margin:6px 0 0;padding-left:18px}
+.toc a{display:inline-block;padding:4px 0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid var(--bd);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--pn)}
+details{border:1px solid var(--bd);border-radius:8px;margin:8px 0;background:var(--pn)}
+summary{cursor:pointer;padding:12px 14px;font-weight:600;min-height:44px}
+details p{padding:0 14px}
+.rel{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+.rel a{display:inline-block;padding:10px 14px;border:1px solid var(--bd);border-radius:8px;background:var(--pn);text-decoration:none;font-weight:600}
+footer{margin-top:50px;border-top:1px solid var(--bd);padding:24px 0 40px;font-size:.92rem;color:var(--mu)}
+footer a{display:inline-block;padding:8px 6px}
+@media(max-width:600px){.toc ul{columns:1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="logo" href="https://globrik.com/">Globrik</a>
+<nav aria-label="Globrik tools"><a href="https://resizeimage.globrik.com/">Resize</a><a href="https://compressimage.globrik.com/">Compress</a><a href="https://cropimage.globrik.com/">Crop</a><a href="https://bgremover.globrik.com/">Background Remover</a><a href="https://imagetotext.globrik.com/">Image to Text</a></nav></div></header>
+<main class="w">
+<h1>Free Online Meme Generator</h1>
+<p class="sub">Add top and bottom text to any photo, then download your meme as a PNG or JPG in seconds.</p>
+
+<section class="tool" aria-label="Meme generator tool">
+<div class="ctl">
+<h2>Meme text</h2>
+<div><label for="t1">Top text</label><textarea id="t1" rows="2" placeholder="When the Wi-Fi finally works"></textarea></div>
+<div><label for="t2">Bottom text</label><textarea id="t2" rows="2" placeholder="And you forgot why you needed it"></textarea></div>
+<div class="row"><div><label for="fnt">Font</label><select id="fnt"><option value="Impact, 'Arial Narrow Bold', 'Arial Black', sans-serif">Impact</option><option value="'Arial Black', Arial, sans-serif">Arial Black</option><option value="'Comic Sans MS', 'Comic Sans', cursive">Comic Sans</option><option value="Arial, Helvetica, sans-serif">Arial</option></select></div>
+<div><label for="fmt">Save as</label><select id="fmt"><option value="png">PNG</option><option value="jpg">JPG</option></select></div></div>
+<div><label for="sz">Text size: <span id="szv">8</span>%</label><input type="range" id="sz" min="3" max="16" step="0.5" value="8"></div>
+<div class="row"><div><label for="tp">Top position: <span id="tpv">3</span>%</label><input type="range" id="tp" min="0" max="45" value="3"></div>
+<div><label for="bp">Bottom position: <span id="bpv">3</span>%</label><input type="range" id="bp" min="0" max="45" value="3"></div></div>
+<div class="row"><div><label for="fc">Text color</label><input type="color" id="fc" value="#ffffff"></div><div><label for="oc">Outline color</label><input type="color" id="oc" value="#000000"></div></div>
+<label class="chk"><input type="checkbox" id="up" checked> ALL CAPS</label>
+<button type="button" id="blank">Use a blank canvas instead</button>
+</div>
+<div class="stage">
+<div id="dz" tabindex="0" role="button" aria-label="Choose or drop an image"><b>Drop an image here or tap to choose</b><span>JPG, PNG, WebP, GIF (first frame), BMP up to 25 MB. Stays in your browser.</span></div>
+<input type="file" id="fi" accept="image/*" hidden>
+<div id="cvw"><canvas id="cv" width="800" height="800" role="img" aria-label="Meme preview"></canvas></div>
+<div id="st" role="status" aria-live="polite"></div>
+<div class="acts"><button type="button" class="p" id="dl" disabled>Download meme</button><button type="button" id="cp" disabled>Copy to clipboard</button><button type="button" id="ch" disabled>Change image</button><button type="button" id="rs">Reset / Start over</button></div>
+</div>
+</section>
+
+<div class="box"><h2>Quick answer: how to make a meme online</h2>
+<p>Upload a photo, type your top and bottom text, adjust the size and position until it reads well, then click Download meme. Everything runs in your browser, so the image never leaves your device and there is no watermark.</p>
+<ol><li>Drop an image onto the tool, or start with a blank canvas.</li><li>Type your top text and bottom text.</li><li>Pick a font, size, and colors.</li><li>Click Download meme, or copy it to paste into a chat.</li></ol></div>
+
+<nav class="toc" aria-label="On this page"><strong>On this page</strong><ul>
+<li><a href="#why">Why use this tool</a></li><li><a href="#guide">Step-by-step guide</a></li><li><a href="#specs">Formats and limits</a></li><li><a href="#uses">Use cases</a></li><li><a href="#features">Key features</a></li><li><a href="#tips">Expert tips and mistakes</a></li><li><a href="#privacy">Privacy and security</a></li><li><a href="#alt">Alternatives</a></li><li><a href="#fix">Troubleshooting</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+
+<article>
+<p>This free online meme generator lets you turn any picture into a classic image macro: bold white text, black outline, top and bottom captions. Whether you search for a meme maker, a meme creator, or just a quick way to add text to a photo, the idea is the same. Upload an image, write your joke, and download the result. You don’t need an account, and nothing gets stamped on your finished meme.</p>
+
+<h2 id="why">Why use this meme generator</h2>
+<ul><li><strong>No signup.</strong> Open the page and start. There’s no account, email, or login.</li><li><strong>No watermark.</strong> The file you download contains only your image and your text.</li><li><strong>Private.</strong> Your image is drawn on a canvas in your browser and is not uploaded.</li><li><strong>Fast.</strong> The preview updates as you type, so you see changes right away.</li><li><strong>Full resolution.</strong> Images are exported at their own size, up to 2,400 pixels on the longest side.</li></ul>
+
+<h2 id="guide">Step-by-step guide to making a meme</h2>
+<h3>1. Choose your image</h3>
+<p>Drag a file onto the box or tap it to browse. Pick a picture with some calm space at the top and bottom, such as sky, a wall, or a floor. Captions sit on those areas, so busy backgrounds make them harder to read.</p>
+<h3>2. Write short text</h3>
+<p>Good memes are brief. Put the setup in the top box and the punchline in the bottom box. Long sentences wrap onto extra lines automatically, but shorter always lands better. You can leave either box empty if you only need one caption.</p>
+<h3>3. Style the text</h3>
+<p>Impact with white fill and a black outline is the classic look and works on almost any photo. If your image is very light, try a dark fill with a white outline. Raise the text size for short phrases and lower it for longer ones.</p>
+<h3>4. Position and export</h3>
+<p>Use the top and bottom position sliders to nudge captions away from faces or important details. When it looks right, choose PNG or JPG and click Download meme. Use PNG for the sharpest text and JPG for a smaller file.</p>
+<p>Need to trim the photo first? Use the <a href="https://cropimage.globrik.com/">Crop Image</a> tool, then bring it back here. If the file is huge, <a href="https://resizeimage.globrik.com/">resize the image</a> before you add text.</p>
+
+<h2 id="specs">Supported formats, specs and limits</h2>
+<div class="tw"><table><thead><tr><th>Item</th><th>Detail</th></tr></thead><tbody>
+<tr><td>Input formats</td><td>Any image your browser can open, usually JPG, PNG, WebP, GIF, and BMP</td></tr>
+<tr><td>Animated GIFs</td><td>Only the first frame is used; the output is a still image</td></tr>
+<tr><td>Max file size</td><td>25 MB</td></tr>
+<tr><td>Max export size</td><td>Longest side is scaled down to 2,400 px if larger</td></tr>
+<tr><td>Output formats</td><td>PNG or JPG (JPG quality about 92%)</td></tr>
+<tr><td>Text</td><td>Top and bottom captions, automatic wrapping, four system fonts</td></tr>
+<tr><td>Blank canvas</td><td>800 × 800 px, solid color of your choice</td></tr>
+</tbody></table></div>
+
+<h2 id="uses">Use cases</h2>
+<ul><li><strong>Group chat regulars</strong> who want a reaction image made from their own photo.</li><li><strong>Social media managers</strong> drafting a lighthearted post without opening design software.</li><li><strong>Teachers</strong> adding a joke caption to a slide or worksheet image.</li><li><strong>Students</strong> making a quick meme for a club announcement.</li><li><strong>Small business owners</strong> adding a funny caption to a product or team photo.</li><li><strong>Friends and family</strong> making birthday or inside-joke images from real photos.</li></ul>
+
+<h2 id="features">Key features and benefits</h2>
+<ul><li>Live preview that updates as you type</li><li>Separate top and bottom captions with automatic line wrapping</li><li>Adjustable size, position, fill color, and outline color</li><li>ALL CAPS toggle for the classic meme style</li><li>Download as PNG or JPG, or copy the image to your clipboard where the browser allows it</li><li>Blank canvas mode for text-only memes</li><li>Works on phones, tablets, and desktops</li></ul>
+
+<h2 id="tips">Expert tips and common mistakes</h2>
+<ul><li><strong>Keep it under about ten words per caption.</strong> If you need more, the joke is probably better as a post caption.</li><li><strong>Don’t cover faces.</strong> The face is usually the reason the image is funny. Slide the text up or down instead.</li><li><strong>Match outline to contrast.</strong> A thick black outline fixes white text on bright skies, but dark text on a dark photo needs a light outline.</li><li><strong>Crop before captioning.</strong> A tighter crop makes the text look bigger and the image stronger.</li><li><strong>Use PNG for text-heavy memes.</strong> JPG can blur the edges of thin lettering a little.</li><li><strong>Check the font on your device.</strong> Impact ships with Windows and macOS, but some phones substitute a similar bold font.</li></ul>
+
+<h2 id="privacy">Privacy and security</h2>
+<p>Your files are processed in your browser and are never uploaded. The image is read with the File API, drawn onto an HTML canvas, and exported from there. The page makes no network requests to send your picture or captions anywhere. Close the tab and the image is gone from the page.</p>
+<p>Technically, this uses the browser’s <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" rel="noopener">Canvas API</a>. Only use images you own or have the right to edit, and avoid memes that harass or mislead people.</p>
+
+<h2 id="alt">This tool vs alternatives</h2>
+<p>Many meme sites, including popular ones like Imgflip, offer big template libraries and extras such as GIF captions. This tool takes a simpler route: your own image, two captions, and a fast download.</p>
+<div class="tw"><table><thead><tr><th></th><th>This browser tool</th><th>Desktop editors</th><th>Server-based meme sites</th></tr></thead><tbody>
+<tr><td>Install needed</td><td>No</td><td>Yes</td><td>No</td></tr>
+<tr><td>Image upload to a server</td><td>No</td><td>No</td><td>Often yes</td></tr>
+<tr><td>Template library</td><td>No, bring your own image</td><td>No</td><td>Usually yes</td></tr>
+<tr><td>Animated GIF captions</td><td>No</td><td>Some</td><td>Some</td></tr>
+<tr><td>Learning curve</td><td>Minimal</td><td>Higher</td><td>Low</td></tr>
+</tbody></table></div>
+<p>If you need a smaller file afterward, run the result through <a href="https://compressimage.globrik.com/">Compress Image File</a>.</p>
+
+<h2 id="fix">Troubleshooting</h2>
+<ul><li><strong>The file won’t load.</strong> Check that it’s an image under 25 MB. Some formats, such as HEIC, aren’t readable by every browser; convert it with the <a href="https://heictojpg.globrik.com/">HEIC to JPG Converter</a> first.</li><li><strong>My GIF isn’t animated.</strong> This tool exports still images. Only the first frame is used.</li><li><strong>The font looks different.</strong> The fonts come from your device. Switch to Arial Black or Arial for consistent results.</li><li><strong>Text is cut off.</strong> Lower the text size or shorten the caption. Position sliders keep text inside the image.</li><li><strong>Copy to clipboard doesn’t work.</strong> Some browsers block image copying. Use Download meme instead.</li><li><strong>The download is too large.</strong> Choose JPG, or resize the original before you upload.</li><li><strong>Nothing happens on mobile.</strong> Tap the drop box, then choose Photos or Files from the picker.</li></ul>
+
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Is this meme generator really free?</summary><p>Yes. You can make and download as many memes as you like at no cost. There are no paid tiers, no credits, and no watermark added to your finished image.</p></details>
+<details><summary>Do I need to sign up to make a meme?</summary><p>No. There’s no account, login, or email request. Open the page, add an image, write your captions, and download the file. Nothing is saved to a profile because there isn’t one.</p></details>
+<details><summary>Is it safe to upload my photos?</summary><p>Your photo isn’t uploaded at all. It’s processed in your browser using a canvas, and the finished meme is created on your device. That makes it a reasonable choice for personal photos.</p></details>
+<details><summary>Is there a file size limit?</summary><p>Yes. Files up to 25 MB are accepted. Very large images are scaled down so the longest side is at most 2,400 pixels, which keeps the page responsive on phones and older computers.</p></details>
+<details><summary>Does it work on my phone?</summary><p>Yes. The layout adapts to small screens and the controls are sized for touch. Tap the drop box to pick a photo from your gallery, then download the finished meme to your device.</p></details>
+<details><summary>Will the image quality drop?</summary><p>PNG output keeps full quality at the exported size. JPG uses about 92% quality, which is usually hard to tell apart from the original. Images above 2,400 pixels on the longest side are scaled down.</p></details>
+<details><summary>Does it work offline?</summary><p>Once the page has loaded, the meme-making itself doesn’t need a connection, because all the work happens in your browser. You do need to be online to open the page the first time.</p></details>
+<details><summary>Can I make animated GIF memes?</summary><p>Not with this tool. It produces still images, and animated GIFs are read as a single frame. If you want a moving clip, try the <a href="https://videotogif.globrik.com/">Video to GIF Converter</a> for a separate animation.</p></details>
+<details><summary>Which font is the classic meme font?</summary><p>Impact, set in white with a black outline, is the traditional meme font. It’s the default here. If Impact isn’t installed on your device, your browser picks a similar bold fallback.</p></details>
+
+<h2>Conclusion</h2>
+<p>A good meme needs a clear image, a short joke, and readable text. This free online meme generator handles the last part so you can focus on the first two. Upload your photo, add your captions, and download your meme now. If it needs a tidy-up first, crop or resize the image and come right back.</p>
+
+<h2>Related tools</h2>
+<ul class="rel"><li><a href="https://cropimage.globrik.com/">Crop Image before adding text</a></li><li><a href="https://resizeimage.globrik.com/">Resize Image to the right dimensions</a></li><li><a href="https://compressimage.globrik.com/">Compress Image File for sharing</a></li><li><a href="https://watermarkimage.globrik.com/">Add Watermark to Image</a></li><li><a href="https://bgremover.globrik.com/">Background Remover for cutouts</a></li></ul>
+</article>
+</main>
+<footer><div class="w">
+<p><a href="https://sites.google.com/view/globriklegal/privacy-policy">Privacy Policy</a> <a href="https://sites.google.com/view/globriklegal/terms-of-use">Terms</a> <a href="https://sites.google.com/view/globriklegal/contact">Contact</a> <a href="https://sites.google.com/view/globriklegal/about">About</a></p>
+<p>Use only images you own or have the right to edit. You are responsible for the memes you create and share.</p>
+<p>© <span id="yr">2026</span> <a href="https://globrik.com/">Globrik</a></p>
+</div></footer>
+<script>
+try{document.getElementById('yr').textContent=new Date().getFullYear()}catch(e){}
+try{var q=[];document.querySelectorAll('#faq ~ details').forEach(function(d){q.push({"@type":"Question","name":d.querySelector('summary').textContent.trim(),"acceptedAnswer":{"@type":"Answer","text":d.querySelector('p').textContent.trim()}})});document.getElementById('faqld').textContent=JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":q})}catch(e){}
+(function(){try{
+var $=function(i){return document.getElementById(i)},cv=$('cv'),cx=cv.getContext('2d'),base=null,MAX=2400;
+function st(m,e){var s=$('st');s.textContent=m;s.className=e?'err':''}
+function on(b){$('dl').disabled=$('cp').disabled=$('ch').disabled=!b;$('dz').style.display=b?'none':'flex';$('cvw').style.display=b?'block':'none'}
+function setBase(src,w,h){var s=Math.min(1,MAX/Math.max(w,h));cv.width=Math.round(w*s);cv.height=Math.round(h*s);base=src;on(true);draw();st('Ready. Edit the text, then download your meme.')}
+function load(f){if(!f)return;if(!/^image\//.test(f.type)){st('That file isn’t an image. Choose a JPG, PNG, WebP, GIF, or BMP.',1);return}
+if(f.size>25*1048576){st('That file is over 25 MB. Resize or compress it first, then try again.',1);return}
+var u=URL.createObjectURL(f),im=new Image();im.onload=function(){URL.revokeObjectURL(u);setBase(im,im.naturalWidth,im.naturalHeight)};im.onerror=function(){URL.revokeObjectURL(u);st('Your browser couldn’t read that image. It may be corrupted or in an unsupported format.',1)};im.src=u}
+function wrap(t,m){var o=[];t.split('\n').forEach(function(p){var l='';p.split(/\s+/).forEach(function(w){if(!w)return;var x=l?l+' '+w:w;if(cx.measureText(x).width>m&&l){o.push(l);l=w}else l=x});if(l)o.push(l)});return o}
+function cap(t,top,fs,W,H,off){if(!t.trim())return;var ls=wrap($('up').checked?t.toUpperCase():t,W*.94),lh=fs*1.1,y=top?H*off/100:H-H*off/100-ls.length*lh;cx.textAlign='center';cx.textBaseline='top';cx.lineJoin='round';cx.lineWidth=fs/6;cx.strokeStyle=$('oc').value;cx.fillStyle=$('fc').value;ls.forEach(function(l,i){cx.strokeText(l,W/2,y+i*lh);cx.fillText(l,W/2,y+i*lh)})}
+function draw(){if(!base)return;var W=cv.width,H=cv.height,fs=W*$('sz').value/100;cx.clearRect(0,0,W,H);if(base.tagName==='CANVAS'||base.nodeName==='IMG')cx.drawImage(base,0,0,W,H);else{cx.fillStyle=base;cx.fillRect(0,0,W,H)}
+cx.font=fs+'px '+$('fnt').value;cap($('t1').value,1,fs,W,H,+$('tp').value);cap($('t2').value,0,fs,W,H,+$('bp').value)}
+['t1','t2','fnt','sz','tp','bp','fc','oc','up'].forEach(function(i){$(i).addEventListener('input',function(){$('szv').textContent=$('sz').value;$('tpv').textContent=$('tp').value;$('bpv').textContent=$('bp').value;draw()})});
+var dz=$('dz'),fi=$('fi');
+dz.onclick=function(){fi.click()};dz.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fi.click()}};
+fi.onchange=function(){load(fi.files[0]);fi.value=''};
+['dragenter','dragover'].forEach(function(n){dz.addEventListener(n,function(e){e.preventDefault();dz.classList.add('on')})});
+['dragleave','drop'].forEach(function(n){dz.addEventListener(n,function(e){e.preventDefault();dz.classList.remove('on')})});
+dz.addEventListener('drop',function(e){load(e.dataTransfer.files[0])});
+$('ch').onclick=function(){fi.click()};
+$('blank').onclick=function(){var c=document.createElement('canvas');c.width=c.height=800;var k=c.getContext('2d');k.fillStyle='#222222';k.fillRect(0,0,800,800);setBase(c,800,800);st('Blank canvas ready. Add your text; pick a light text color if needed.')};
+function blob(cb){var j=$('fmt').value==='jpg',t=document.createElement('canvas');t.width=cv.width;t.height=cv.height;var k=t.getContext('2d');if(j){k.fillStyle='#fff';k.fillRect(0,0,t.width,t.height)}k.drawImage(cv,0,0);t.toBlob(cb,j?'image/jpeg':'image/png',.92)}
+$('dl').onclick=function(){if(!base){st('Add an image first.',1);return}if(!$('t1').value.trim()&&!$('t2').value.trim()){st('Heads up: you haven’t added any text yet. Downloading the plain image.')}
+blob(function(b){if(!b){st('Couldn’t create the file. Try a smaller image.',1);return}var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='meme.'+($('fmt').value);document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},2000);st('Done. Your meme was downloaded.')})};
+$('cp').onclick=function(){if(!navigator.clipboard||!window.ClipboardItem){st('Your browser doesn’t support copying images. Use Download meme instead.',1);return}
+var t=document.createElement('canvas');t.width=cv.width;t.height=cv.height;t.getContext('2d').drawImage(cv,0,0);t.toBlob(function(b){navigator.clipboard.write([new ClipboardItem({'image/png':b})]).then(function(){st('Copied. Paste it into a chat or document.')},function(){st('The browser blocked copying. Use Download meme instead.',1)})},'image/png')};
+$('rs').onclick=function(){base=null;['t1','t2'].forEach(function(i){$(i).value=''});$('sz').value=8;$('tp').value=3;$('bp').value=3;$('fc').value='#ffffff';$('oc').value='#000000';$('up').checked=true;$('fnt').selectedIndex=0;$('fmt').selectedIndex=0;$('szv').textContent=8;$('tpv').textContent=3;$('bpv').textContent=3;on(false);st('')};
+}catch(e){var s=document.getElementById('st');if(s){s.textContent='Something went wrong loading the tool. Please refresh the page.';s.className='err'}}})();
+</script>
+</body>
+</html>
